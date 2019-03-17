@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Train Time!</title>
+</head>
+
+<body>
+    <div class="container">
+        <div style="background-color: burlywood" class="jumbotron">
+            <h1 style="color: white;" class="display-4 text-center">Train Schedule</h1>
+            <p style="color: white; " class="lead text-center">Chugga Chugga Choo Choo</p>
+        </div>
+    
+    <div class="card">
+        <div class="card-header">
+                Train Schedule
+        </div>
+            
+            <div class="card-body">
+                <table class="table">
+                    <thead class="thead-primary">
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="card">
+            <div class="card-header">
+                New Train
+            </div>
+
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="empName">Train Name</label>
+                        <input type="text" class="form-control" id="train" placeholder="Enter Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="empRole">Destination</label>
+                        <input type="text" class="form-control" id="destination" placeholder="Enter Destination">
+                    </div>
+                    <div class="form-group">
+                        <label for="empStartDate">First Train Time(HH:mm - Military</label>
+                        <input type="text" class="form-control" id="first-train-time" placeholder="Enter Train Start Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="empRate">Frequency</label>
+                        <input type="text" class="form-control" id="frequency" placeholder="Enter Frequency">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+        <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
